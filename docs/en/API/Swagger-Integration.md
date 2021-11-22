@@ -71,7 +71,8 @@ public override void OnApplicationInitialization(ApplicationInitializationContex
     var app = context.GetApplicationBuilder();
 
     //... other configarations.
-
+    
+    app.UseSwagger();
     app.UseAbpSwaggerUI(options =>
     {
         options.SwaggerEndpoint("/swagger/v1/swagger.json", "Test API");
@@ -125,7 +126,8 @@ public override void OnApplicationInitialization(ApplicationInitializationContex
     var app = context.GetApplicationBuilder();
 
     //... other configarations.
-
+   
+    app.UseSwagger();
     app.UseAbpSwaggerUI(options =>
     {
         options.SwaggerEndpoint("/swagger/v1/swagger.json", "Test API");
